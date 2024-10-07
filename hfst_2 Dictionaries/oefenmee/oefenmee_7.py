@@ -5,3 +5,13 @@ gasten = { # Sleutel is naam, waarde is job.
     "Joris":   "regisseur",
     "Korneel": "scenarist"
 }
+while True :
+    naam = input('wie is het ')
+    if naam != 'stop':
+        if naam in gasten :
+            gasten.pop(naam)
+            print(f'welkom {naam}. kom binnen')
+        else :
+            print(f'{naam} staat niet op de lijst ')
+    else : 
+        break
