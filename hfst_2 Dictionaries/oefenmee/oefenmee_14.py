@@ -23,3 +23,11 @@ spelinfo = {
         }
     }
 }
+
+print(spelinfo['speler2']['naam'])
+print(spelinfo['speler1']['positie'])
+print(spelinfo['speler2']['inventaris']['wapen'])
+
+spelinfo['speler2']['inventaris']['goud']=0
+print(spelinfo)
+
